@@ -12,8 +12,8 @@
 	<groupId>com.mitocode</groupId>
 	<artifactId>mediapp-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mediapp-backend</name>
-	<description>Backend Proyecto Curso</description>
+	<name>freundapp-backend</name>
+	<description>Backend Proyecto FreundApp</description>
 
 	<properties>
 		<java.version>1.8</java.version>

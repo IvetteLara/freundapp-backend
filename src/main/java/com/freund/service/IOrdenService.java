@@ -6,7 +6,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import com.freund.dto.FiltroOrdenDTO;
-import com.freund.dto.OrdenResumenDTO;
 import com.freund.model.Orden;
 
 public interface IOrdenService extends ICRUD<Orden, Integer>{
@@ -16,9 +15,5 @@ public interface IOrdenService extends ICRUD<Orden, Integer>{
 	List<Orden> buscar(FiltroOrdenDTO filtro);
 	
 	List<Orden> buscarFecha(FiltroOrdenDTO filtro);
-	
-	List<OrdenResumenDTO> listarResumen();
-	
-	byte[] generarReporte();
-	
+		
 }

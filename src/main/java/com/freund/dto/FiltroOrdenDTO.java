@@ -2,16 +2,25 @@ package com.freund.dto;
 
 public class FiltroOrdenDTO {
 
-	private String dui;
+	private String numOrden;
+	private String numdoc;
 	private String nombreCompleto;
 	private String fechaOrden;
 
-	public String getDui() {
-		return dui;
+	public String getNumOrden() {
+		return numOrden;
 	}
 
-	public void setDui(String dui) {
-		this.dui = dui;
+	public void setNumOrden(String numOrden) {
+		this.numOrden = numOrden;
+	}
+
+	public String getNumdoc() {
+		return numdoc;
+	}
+
+	public void setNumdoc(String numdoc) {
+		this.numdoc = numdoc;
 	}
 
 	public String getNombreCompleto() {
