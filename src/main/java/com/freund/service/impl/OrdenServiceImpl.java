@@ -42,4 +42,10 @@ public class OrdenServiceImpl extends CRUDImpl<Orden, Integer> implements IOrden
 		return repo.buscarFecha(fecha, fecha.plusDays(1));
 	}
 
+	@Override
+	public String getNextOrden() {
+		String next = String.valueOf(repo.getMaxOrden()+1);
+		return next;
+	}
+
 }

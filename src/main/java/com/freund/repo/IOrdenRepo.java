@@ -15,5 +15,7 @@ public interface IOrdenRepo extends IGenericRepo<Orden, Integer>{
 		
 		@Query("FROM Orden c WHERE c.fecha BETWEEN :fechaOrden AND :fechaSgte")
 		List<Orden> buscarFecha(@Param("fechaOrden") LocalDateTime fechaOrden, @Param("fechaSgte") LocalDateTime fechaSgte);
-		
+
+		@Query(value = "SELECT max(numOrden) FROM Orden")
+		int getMaxOrden();
 }

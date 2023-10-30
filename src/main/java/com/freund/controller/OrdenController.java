@@ -77,7 +77,7 @@ public class OrdenController {
 	@PostMapping
 	public ResponseEntity<Orden> registrar(@Valid @RequestBody Orden orden) throws Exception {
 		orden.getDetalleOrden().forEach(det -> det.setOrden(orden));
-
+        orden.setNumOrden(service.getNextOrden());
 		Orden obj = service.registrar(orden);
 		return new ResponseEntity<Orden>(obj, HttpStatus.CREATED);
 	}

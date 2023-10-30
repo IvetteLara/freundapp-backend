@@ -16,4 +16,6 @@ public interface IOrdenService extends ICRUD<Orden, Integer>{
 	
 	List<Orden> buscarFecha(FiltroOrdenDTO filtro);
 		
+	String getNextOrden();
+
 }
